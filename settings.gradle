@@ -1,0 +1,23 @@
+pluginManagement{
+    repositories {
+        gradlePluginPortal()
+    }
+}
+
+
+
+rootProject.name = 'practicebook'
+
+include '01-oop'
+include '02-was'
+include '03-servlet'
+include '04-jdbc'
+include '05-reflection'
+include '06-front_controller'
+include '07-di_framework'
+
+
+include '96-multi'
+include '97-newlect'
+include '98-notepad'
+include '99-codingtest'

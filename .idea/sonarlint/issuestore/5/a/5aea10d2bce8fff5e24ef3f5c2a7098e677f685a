@@ -1,0 +1,15 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–”é„ÿÿÿÿÿ
+g
+java:S3008"LRename this field "T" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–·‘şÿÿÿÿ
+g
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–·‘şÿÿÿÿ
+g
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–·‘şÿÿÿÿ
+g
+java:S3008"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰úŠ½ÿÿÿÿÿ
+g
+java:S3008"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥¾„¥úÿÿÿÿ
+Y
+java:S1659">Declare "N" and all following declarations on a separate line.(–·‘şÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(¼şàÔ

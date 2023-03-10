@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01-oop" />
+            <option value="$PROJECT_DIR$/02-was" />
+            <option value="$PROJECT_DIR$/03-servlet" />
+            <option value="$PROJECT_DIR$/04-jdbc" />
+            <option value="$PROJECT_DIR$/05-reflection" />
+            <option value="$PROJECT_DIR$/06-front_controller" />
+            <option value="$PROJECT_DIR$/07-di_framework" />
+            <option value="$PROJECT_DIR$/96-multi" />
+            <option value="$PROJECT_DIR$/97-newlect" />
+            <option value="$PROJECT_DIR$/98-notepad" />
+            <option value="$PROJECT_DIR$/99-codingtest" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

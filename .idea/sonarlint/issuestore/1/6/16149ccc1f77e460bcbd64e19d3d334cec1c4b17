@@ -1,0 +1,10 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñä†Å
+k	java:S116	"QRename this field "PREFIX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ùßƒþÿÿÿÿ
+k	java:S116
+"QRename this field "SUFFIX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÞ©Çúÿÿÿÿ
+<
+java:S1170	"!Make this final field static too.(‘Ùßƒþÿÿÿÿ
+<
+java:S1170
+"!Make this final field static too.(ÜÞ©Çúÿÿÿÿ

@@ -1,0 +1,165 @@
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+
+    }
+}
+
+//루트포함전부공통
+allprojects{
+    group 'com.dev'
+    version '1.0-SNAPSHOT'
+}
+
+
+//루트아래로공통적인부분
+subprojects {
+
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        //junit 5는 기본적으로 의존성이 걸려있음
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+        testImplementation 'org.assertj:assertj-core:3.23.1'//테스트코드 가독성을 위한 assertj
+
+
+        //롬복
+        compileOnly 'org.projectlombok:lombok:1.18.24'
+//        annotationProcessor 'org.projectlombok:lombok'
+        testCompileOnly 'org.projectlombok:lombok:1.18.24'
+//        testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
+    task initSourceFolders{
+        sourceSets*.java.srcDirs*.each{
+            if(!it.exists()){
+                it.mkdirs()
+            }
+        }
+
+        sourceSets*.resources.srcDirs*.each{
+            if(!it.exists()){
+                it.mkdirs()
+            }
+        }
+    }
+}
+
+
+//implementation 'org.springframework:spring-webmvc:5.3.18' //spring DispatcherServlet 보기위함
+
+
+
+project(':01-oop'){
+    dependencies{
+        testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.2' //@ParameterizedTest 를 위한 의존성
+        implementation 'org.passay:passay:1.6.1' //비밀번호를 생성해주는 라이브러리
+    }
+}
+
+project(':02-was'){
+    dependencies{
+        implementation 'ch.qos.logback:logback-classic:1.2.3'
+    }
+}
+
+project(':03-servlet'){
+    dependencies{
+        //여기서는 로그 이거 2개다 필요하네 ....
+        implementation 'ch.qos.logback:logback-classic:1.2.3'
+        implementation 'ch.qos.logback:logback-core-api:1.2.3'
+        implementation 'org.reflections:reflections:0.10.2'//reflection 을 위한 의존성
+        implementation 'org.apache.tomcat.embed:tomcat-embed-core:8.5.42'
+        implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.5.42'
+    }
+}
+
+project(':04-jdbc'){
+    dependencies{
+        implementation group: 'org.springframework', name: 'spring-jdbc', version: '5.3.22'//jdbc
+        implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'//HikariCP
+        implementation group: 'com.h2database', name: 'h2', version: '2.1.214'//인메모리DB 인 H2 사용
+        testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.22.0'//테스트코드 가독성을위한 assertj
+//        implementation 'ch.qos.logback:logback-classic:1.2.3' //디버그까지 로그를 찍어주니까... 이거 레벨 info로 바꿔야함
+//        testImplementation group: 'com.h2database', name: 'h2', version: '2.1.214'
+//        implementation 하면 test까지 적용되고, testimplementation하면 main에서는 적용안됨
+
+    }
+}
+
+project(':05-reflection'){
+    dependencies {
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
+        implementation 'org.reflections:reflections:0.10.2'//reflection 을 위한 의존성
+        implementation 'ch.qos.logback:logback-classic:1.2.3'
+    }
+}
+
+project(':06-front_controller'){
+    dependencies {
+        implementation 'org.apache.tomcat.embed:tomcat-embed-core:8.5.42'
+        implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.5.42'
+
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
+
+        //간단한 jsp 화면만들기를 위해 jstl 의존성 추가
+        implementation 'javax.servlet:jstl:1.2'
+
+        implementation 'ch.qos.logback:logback-classic:1.2.3'
+    }
+}
+
+project(':96-multi'){
+    dependencies {
+        implementation 'org.modelmapper:modelmapper:3.0.0'
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
+
+    }
+}
+
+project(':97-newlect'){
+    dependencies{
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
+    }
+}
+
+project(':98-notepad'){
+    dependencies{
+        //WAS 로서 임베디드톰캣을 사용할거라서 임베디드 톰캣 관련 의존성 추가
+        implementation 'org.apache.tomcat.embed:tomcat-embed-core:8.5.42'
+        implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.5.42'
+        //톰캣은 서블릿을 시행하기 때문에 서블릿 의존성 추가
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
+        //간단한 jsp 화면만들기를 위해 jstl 의존성 추가
+        implementation 'javax.servlet:jstl:1.2'
+
+        //로그출력을위한 로그 관련 의존성
+        implementation 'ch.qos.logback:logback-classic:1.2.3'
+    }
+}
+
+project(':99-codingtest'){
+    dependencies{
+
+    }
+}
+
+
+
+
+
+
+

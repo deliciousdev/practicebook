@@ -1,0 +1,11 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æ¶Û8œé¾Óì0
+v	java:S116"URename this field "WRONG_VIEW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ÂÚÆùÿÿÿÿ8©é¾Óì0
+C
+java:S1170"!Make this final field static too.(½ÂÚÆùÿÿÿÿ8ªé¾Óì0
+b
+java:S1128"@Remove this unused import 'javax.servlet.annotation.WebServlet'.(™ì¢´şÿÿÿÿ8¹é¾Óì0
+u
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(«…Ô¿8¹é¾Óì0
+z
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Õ´œÍşÿÿÿÿ8¹é¾Óì0

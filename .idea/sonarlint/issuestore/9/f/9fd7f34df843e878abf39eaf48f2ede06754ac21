@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ﬁ”¿ï
+ç
+java:S3008"rRename this field "WRONG_PASSWORD_LENGTH_EXCEPTION_MESSAGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ’’ñˇˇˇˇˇ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(•îﬁ€

@@ -1,0 +1,7 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æßµ£úÿÿÿÿ8ãØÈÑì0
+u	java:S116"TRename this field "DB_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô­®Ôùÿÿÿÿ8çØÈÑì0
+r	java:S116"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¡Îÿÿÿÿÿ8çØÈÑì0
+s	java:S116"RRename this field "DB_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±°ø¼ûÿÿÿÿ8çØÈÑì0
+w	java:S116"VRename this field "DB_PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹”şÉøÿÿÿÿ8èØÈÑì0
+t	java:S116"XRename this field "MAX_POOL_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¼Ö¥8èØÈÑì0
